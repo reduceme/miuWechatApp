@@ -14,6 +14,18 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const openAlert = msg => {
+  wx.showModal({
+    content: msg,
+    showCancel: false,
+    success: function (data) {
+      if (data.confirm) {
+      }
+    }
+  });
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  openAlert: openAlert
 }
