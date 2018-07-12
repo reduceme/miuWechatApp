@@ -1,13 +1,12 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/class/class"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "backgroundColor": "#f8f8f8",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "MiuYoga会员约课系统",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
   }
 }

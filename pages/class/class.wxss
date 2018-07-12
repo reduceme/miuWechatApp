@@ -1,0 +1,51 @@
+page {
+  background-color: #efeff4;
+}
+
+.weui-cells_after-title {
+  margin-top: 40rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 40rpx;
+}
+
+.weui-select {
+  text-align: center;
+  border-left: 1rpx solid #d9d9d9;
+  border-top: 1rpx solid #d9d9d9;
+  height: 70rpx;
+  min-height: 70rpx;
+  line-height: 70rpx;
+  background: -webkit-linear-gradient(#fff, #cecece);
+  background: -o-linear-gradient(#fff, #cecece);
+  background: -moz-linear-gradient(#fff, #cecece);
+  background: linear-gradient(#fff, #cecece);
+  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.date-tab {
+  width: 100%;
+  height: 180rpx;
+  padding: 0 10rpx;
+}
+
+.date-tab-view {
+  list-style: none;
+  width: 90rpx;
+  height: 90rpx;
+  border: solid 1rpx #c1c1c1;
+  border-radius: 10rpx;
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
+  margin-right: 15rpx;
+}
+
+image {
+  width: 75%;
+  height: 75%;
+}

@@ -1,0 +1,19 @@
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__bd">
+      <picker bindchange="bindClassroomChange" value="{{index}}" range="{{classroomList}}" range-key='classroom'>
+        <view class="weui-select">{{classroomList[index].classroom}}</view>
+      </picker>
+    </view>
+  </view>
+</view>
+
+<view class="date-tab">
+    <view class="nav-time date-tab-view"><text>1</text></view>
+    <view class="nav-time date-tab-view"><text>1</text></view>
+    <view class="nav-time date-tab-view"><text>1</text></view>
+    <view class="nav-time date-tab-view"><text>1</text></view>
+     <view class='date-tab-view' style='border: none'>
+         <image src='../../public/img/date.png'></image>   
+    </view>
+</view>

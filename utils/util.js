@@ -27,5 +27,6 @@ const openAlert = msg => {
 
 module.exports = {
   formatTime: formatTime,
-  openAlert: openAlert
+  openAlert: openAlert,
+  ipConfig: 'http://localhost:3000'
 }
