@@ -9,11 +9,30 @@
 </view>
 
 <view class="date-tab">
-    <view class="nav-time date-tab-view"><text>1</text></view>
-    <view class="nav-time date-tab-view"><text>1</text></view>
-    <view class="nav-time date-tab-view"><text>1</text></view>
-    <view class="nav-time date-tab-view"><text>1</text></view>
-     <view class='date-tab-view' style='border: none'>
-         <image src='../../public/img/date.png'></image>   
+  <view wx:for="{{contentInfo}}" wx:key="contentInfo" class="nav-time date-tab-view {{item.select == catalogSelect ? 'active':''}}" data-week="{{item.dataWeek}}" data-year="{{item.dataYear}}" data-select="{{item.select}}" bindtap="getTimetable">
+    <text class="date-left">{{item.showTime}}</text>
+  </view>
+  <view class="date-tab-view" style="border: none">
+    <picker class="weui-btn date-left time-picker-content" mode="date" data-week="{{date}}" value="{{date}}" bindchange="bindDateChange">
+      <button type="default" id="timePickerBtn"></button>
+    </picker>
+  </view>
+</view>
+
+<view class="schedule-table">
+  <view class="schedule-row" wx:for="{{timetableList}}" wx:key="timetableList">
+    <view class="schedule-general-style schedule-first-col">
+      <text data-complate-time="" class="schedule-time-text">{{item.time}}</text>
     </view>
+    <view class="schedule-general-style schedule-second-col">
+      <view class="schedule-title">{{item.classname}}</view>
+      <view class="schedult-content">
+        <text class="schedult-teacher">{{item.teacher}}</text>
+        <text class="schedult-people-number" data-max="{{item.maxCount}}" data-min="{{item.minCount}}" data-classid="{{item.classId}}" data-has-count="">已预约{{item.week}}人；{{item.swipeNumber}}人开课</text>
+      </view>
+    </view>
+    <view class="schedule-general-style schedule-third-col">
+    <button class="schedule-class-btn" data-class-limit="" data-classid="">预约</button>
+    </view>
+  </view>
 </view>

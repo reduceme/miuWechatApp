@@ -30,7 +30,7 @@ page {
 .date-tab {
   width: 100%;
   height: 180rpx;
-  padding: 0 10rpx;
+  padding: 0 70rpx;
 }
 
 .date-tab-view {
@@ -48,4 +48,109 @@ page {
 image {
   width: 75%;
   height: 75%;
+}
+
+.date-left {
+  float: left;
+}
+
+.time-picker-content {
+  width: 100%;
+  height: 100%;
+}
+
+#timePickerBtn {
+  width: 65rpx;
+  height: 67rpx;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB20lEQVRYR+1XS1LCQBB9PUWV5c4byBG4Abi2gMAFgGVwoTcQT2C5gLhTLkD4FGvwBOIN4g3Y6QLS1qSYGCJhBlIlm2SX6c+8fumeNyFoHmvSsyDYG17fLHS+Ubs1er6Ff9Yf1lrLfXGkS1ofO8zgN7fSLul8ld2aOCXBmDHjya3ad3sBWO7LBYmvKgnKRx0HZftBvkcBWK6TFzk0EhMyPgcV+zUEsAEevAPFaJwv/JFklWpjZ0bAn+oGFTtgZwvAprIkAIqpOID6yOmAcB+P8wlXJDcIDIygYvUMqnZnJwMCzUQGCF4iA/5vkUxcIlBR7hkCUBXHk9dHzpKJFwf1wLRbEGvxntQDISMmACSdWMEb1mzPtAmlXzA9q/P5rik4CMAhm5r6ZgB2MsDA3JTC1H6MPBHyW1OQOukxCaJTIA+FY3IcE0M+N4moYXQOHLOBLiabAiMGpEhJKt2KHfaGNe0WaC0ewfiIyqxunYC+1Aj1aYwAKJGKakRc5VRC3bpsNiVugcApddynBYEGABiW7fB8kHcH5L4LEP4yekPSrse0xAiArpPT2I0AZD2Q9cDJx/DkANKMmS7WaAx1SdLYMwAxBnoeQJdpKE0R25J/Rk2AO/8Ngpn7brXd/AG3vja4smJxigAAAABJRU5ErkJggg==");
+  background-repeat: no-repeat;
+}
+
+.active {
+  color: #fff;
+  border: 1px solid #52b297;
+  background-color: #52b297;
+}
+
+.schedule-row {
+  height: 140rpx;
+  background: #fff;
+}
+
+.schedule-first-col {
+  width: 23%;
+}
+
+.schedule-second-col {
+  width: 55%;
+}
+
+.schedule-third-col {
+  width: 22%;
+}
+
+.schedule-general-style {
+  height: 140rpx;
+  display: inline-block;
+  position: relative;
+}
+
+.schedule-time-text {
+  position: absolute;
+  height: 140rpx;
+  width: 100%;
+  line-height: 140rpx;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
+}
+
+.schedule-title {
+  position: absolute;
+  color: #53b196;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 25rpx;
+}
+
+.schedult-content {
+  /* position: absolute;
+  height: 90rpx;
+  width: 100%;
+  margin-top: 50rpx; */
+  position: absolute;
+  height: 80rpx;
+  width: 100%;
+  margin-top: 60rpx;
+  line-height: 80rpx;
+}
+
+.schedult-teacher {
+  color: #efa236;
+}
+
+.schedult-people-number {
+  font-weight: 300;
+  color: #2e2e2e;
+  margin-left: 13rpx;
+}
+
+.schedult-teacher, .schedult-people-number {
+  font-size: 0.8rem;
+}
+
+.schedule-class-btn {
+  position: absolute;
+  color: #fff;
+  background-color: #53b196;
+  border-color: #53b196;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  line-height: 1.5;
+  border-radius: 6rpx;
+  white-space: nowrap;
+  margin-top: 42rpx;
+  margin-left: 15rpx;
 }
